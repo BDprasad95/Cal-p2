@@ -8,11 +8,5 @@ pipeline {
                 sh ' ./mvnw clean install compile '
             }
         }
-        stage('test'){
-            steps{
-                sh './mvnw test'
-                
-            }
-        }
     }
 }
